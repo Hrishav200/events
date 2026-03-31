@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+--font-bebas: 'Bebas Neue', sans-serif;
+--font-dmsans: 'DM Sans', sans-serif;
+  --color-bg: #0b0a09;
+  --color-surface: #141210;
+  --color-card: #1a1714;
+  --color-card-highlight: #1a1714b0;
+  --color-amber: #f5a623;
+  --color-hot: #ff4f5e;
+  --color-teal: #00d4b4;
+  --color-silver: #b4b4c8;
+  --color-bronze: #c87c50;
+  --color-offwhite: #f0ebe3;
+  --color-muted: #7a7167;
+  --color-border: rgba(245,166,35,0.25);
+  --color-gradient-amber: rgba(245,166,35,0.12);
+  --color-gradient-hot: rgba(255,79,94,0.1);
+  --color-gradient-teal: rgba(0,212,180,0.1);
+  --color-secondary-bg: rgba(245,166,35,0.03);
+  --animate-drift-amber: drift 8s ease-in-out infinite;
+  --animate-drift-hot: drift 10s ease-in-out infinite reverse;
+  --animate-drift-teal: drift 12s ease-in-out infinite;
+}
+
+
+@layer base {
+  body {
+    font-family: var(--font-bebas);
+    font-family: var(--font-dmsans);
+  }
+}
+
+@keyframes drift {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(20px, -20px); }
+  }
+
