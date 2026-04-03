@@ -3,7 +3,7 @@ import Text from "../ui/text";
 
 export default function ScrollBanner() {
   return (
-    <div className="bg-amber overflow-hidden py-[10px] whitespace-nowrap mt-16">
+    <div className="bg-amber overflow-hidden py-[10px] whitespace-nowrap mt-24">
       <motion.div
         className="inline-flex gap-8"
         animate={{ x: ["0%", "-50%"] }}

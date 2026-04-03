@@ -30,10 +30,14 @@ const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, to: string) => {
 export default function Header() {
   return (
     <header className="flex sticky top-0 z-50 flex-col w-full backdrop-blur-md border-b bg-black/30 border-gradient-amber">
-      <div className="flex flex-row items-center justify-between w-full py-7 md:px-14 px-6">
-        <h1 className="text-shadow-sm text-2xl font-bold text-amber font-bebas uppercase tracking-[2px] leading-none">
-          The Encore
-        </h1>
+      <div className="flex flex-row max-h-24 items-center justify-between w-full md:px-14 px-6">
+        <a href="/" className="flex items-center justify-center size-32">
+          <img
+            src="/en-logo.png"
+            alt="Logo"
+            className="object-contain object-center h-full w-full"
+          />
+        </a>
 
         <nav className="flex-row gap-4 hidden md:flex">
           {navItems.map((item) => (

@@ -6,7 +6,7 @@ import { cn } from "../../../helper/cn";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col bg-surface backdrop-opacity-10 border-t border-border flex-wrap">
+    <footer className="flex flex-col bg-surface backdrop-opacity-10 border-t border-border flex-wrap relative">
       <div className="flex flex-row items-center justify-between gap-12 w-full py-16 px-6 md:px-14 flex-wrap">
         <div className="text-4xl font-bold text-amber font-bebas uppercase tracking-[2px] leading-none">
           THE ENCORE

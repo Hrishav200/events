@@ -9,12 +9,12 @@ export default function Timer({ remaining, unit }: TimerProps) {
   return (
     <div className="flex flex-row gap-2 flex-wrap justify-center">
       <div className="flex flex-col gap-2">
-        <div className="flex flex-row gap-2 items-center justify-center bg-gradient-amber rounded-sm border border-gradient-amber w-16 h-16 p-4">
+        <div className="flex flex-row gap-2 items-center justify-center bg-amber-100/20 rounded-sm border border-gradient-amber w-16 h-16 p-4">
           <Text
             as="span"
             size="5xl"
             fontWeight="medium"
-            className="text-center font-bebas text-shadow-sm text-amber uppercase"
+            className="text-center font-bebas text-shadow-sm text-amber-300 uppercase"
           >
             {remaining}
           </Text>
@@ -23,7 +23,7 @@ export default function Timer({ remaining, unit }: TimerProps) {
           as="span"
           size="xs"
           fontWeight="light"
-          className="text-center text-muted uppercase"
+          className="text-center text-offwhite uppercase"
         >
           {unit}
         </Text>
@@ -38,7 +38,7 @@ export function TimerSeparator() {
       as="span"
       size="5xl"
       fontWeight="light"
-      className="text-muted uppercase tracking-widest mb-5"
+      className="text-offwhite uppercase tracking-widest mb-5"
     >
       :
     </Text>
