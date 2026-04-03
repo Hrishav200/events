@@ -33,6 +33,7 @@ export default function Home() {
           <LocationSection />
           <SponsorSection />
         </section>
+
         <Footer />
       </div>
     </div>
@@ -41,35 +42,20 @@ export default function Home() {
 
 function HeroSection() {
   return (
-    <div className="relative px-3 overflow-hidden  min-h-screen items-center justify-center flex flex-col -my-9">
+    <div className="relative px-3 overflow-hidden min-h-screen items-center justify-center flex flex-col -my-24">
       <AbsolutesSection />
+
       <div className="flex flex-col gap-10 z-10">
         <div className="flex flex-col gap-6 items-center justify-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.4 }}
-          >
-            <Text
-              as="p"
-              size="sm"
-              fontWeight="light"
-              className="text-center text-teal uppercase md:tracking-[0.3em] leading-none"
-            >
-              Melbourne's Musical Gathering
-            </Text>
-          </motion.div>
-
-          <section className="flex flex-col gap-6">
+          <section className="flex flex-col w-full items-center justify-center overflow-hidden">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.6 }}
-              className="font-bebas text-center text-[clamp(5rem,15vw,13rem)] leading-[0.9] tracking-[2px] bg-linear-to-br from-offwhite from-30% to-amber to-70% bg-clip-text text-transparent font-bold"
+              transition={{ duration: 0.4, delay: 0.4 }}
             >
-              THE
-              <br />
-              ENCORE
+              <div className="relative w-full h-full">
+                <img src="/en-logo.png" className="object-contain" />
+              </div>
             </motion.h1>
 
             <motion.div
@@ -81,7 +67,7 @@ function HeroSection() {
                 as="p"
                 size="lg"
                 fontWeight="light"
-                className="text-center text-base text-muted font-light animate-fade-up tracking-widest"
+                className="text-center text-base text-white font-light animate-fade-up tracking-widest"
               >
                 <strong className="text-white">{date.day}</strong> &nbsp;·&nbsp;{" "}
                 {date.time} &nbsp;·&nbsp; {date.location}
@@ -99,32 +85,32 @@ function HeroSection() {
           <Chip
             label="Multi-Genre"
             classNames={{
-              container: "border-amber",
-              text: "text-amber text-sm",
+              container: "border-amber bg-amber/20",
+              text: "text-offwhite text-sm",
             }}
           />
 
           <Chip
             label="Live Bands"
             classNames={{
-              container: "border-teal",
-              text: "text-teal text-sm",
+              container: "border-teal bg-teal/20",
+              text: "text-offwhite text-sm",
             }}
           />
 
           <Chip
             label="5 Acts"
             classNames={{
-              container: "border-gray-500",
-              text: "text-muted text-sm",
+              container: "border-gray-500 bg-gray-500/80",
+              text: "text-offwhite text-sm",
             }}
           />
 
           <Chip
             label="Melbourne Musicians"
             classNames={{
-              container: "border-hot",
-              text: "text-hot text-sm",
+              container: "border-hot bg-hot/80",
+              text: "text-offwhite text-sm",
             }}
           />
         </motion.div>
@@ -161,7 +147,7 @@ function TimerSection() {
         as="p"
         size="xs"
         fontWeight="light"
-        className="text-center text-muted uppercase tracking-[0.3em] leading-none"
+        className="text-center text-offwhite uppercase tracking-[0.3em] leading-none"
       >
         Event Starts In
       </Text>
@@ -181,10 +167,15 @@ function TimerSection() {
 
 function AbsolutesSection() {
   return (
-    <div className="absolute rounded-full blur-3xl w-full h-full">
-      <div className="absolute rounded-full pointer-events-none w-[500px] h-[500px] -top-[100px] -left-[100px] bg-gradient-amber blur-[100px] animate-drift-amber" />
-      <div className="absolute rounded-full pointer-events-none w-[400px] h-[400px] bottom-0 -right-[50px] bg-gradient-hot blur-[100px] animate-drift-hot" />
-      <div className="absolute rounded-full pointer-events-none w-[300px] h-[300px] top-[40%] left-[40%] bg-gradient-teal blur-[100px] animate-drift-teal" />
+    <div
+      className="absolute w-full h-full bg-cover bg-center bg-no-repeat md:bg-fixed"
+      style={{
+        backgroundImage: `url(/flyer.png)`,
+      }}
+    >
+      <div className="flex flex-col w-full h-full relative">
+        <div className="flex flex-1 bg-black/75 md:blur-sm inset-0" />
+      </div>
     </div>
   );
 }

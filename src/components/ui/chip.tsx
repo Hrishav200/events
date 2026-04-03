@@ -13,7 +13,7 @@ export default function Chip({ label, classNames }: ChipProps) {
   return (
     <div
       className={cn(
-        "flex flex-row gap-2 px-3 py-0.5 rounded-full items-center justify-center bg-transparent border",
+        "flex flex-row gap-2 px-3 py-0.5 rounded-full items-center justify-center border",
         classNames.container,
       )}
     >

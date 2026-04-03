@@ -45,7 +45,7 @@ export default function ShareSection() {
   };
 
   return (
-    <div className="flex flex-row gap-4 items-center justify-center bg-surface p-16">
+    <div className="flex flex-row gap-4 items-center justify-center bg-surface p-16 flex-wrap">
       <span className="text-muted uppercase tracking-[0.2em] leading-none text-sm">
         Share the night →
       </span>

@@ -7,14 +7,17 @@ import Button from "../ui/button";
 
 export default function SponsorSection() {
   return (
-    <div id="sponsors" className="flex flex-col gap-4 w-full scroll-mt-24">
+    <div
+      id="sponsors"
+      className="flex flex-col gap-4 w-full scroll-mt-24 relative"
+    >
       <section className="py-7 md:px-14 px-6 flex flex-col gap-16">
         <SectionHeading label="Made Possible By" title="Sponsor The Encore" />
-
         <SponsorTiers />
         <GetInTouch />
         <SponsorsList />
       </section>
+      );
     </div>
   );
 }
