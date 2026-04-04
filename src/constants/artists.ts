@@ -1,5 +1,3 @@
-import { image } from "framer-motion/client";
-
 export interface Band {
   name: string;
   genre: string;
