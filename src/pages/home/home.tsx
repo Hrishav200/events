@@ -54,7 +54,7 @@ function HeroSection() {
               transition={{ duration: 0.4, delay: 0.4 }}
             >
               <div className="relative w-full h-full">
-                <img src="/logo.png" className="object-contain" />
+                <img src="/en-logo.png" className="object-contain" />
               </div>
             </motion.h1>
 
