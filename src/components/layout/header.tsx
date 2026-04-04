@@ -33,7 +33,7 @@ export default function Header() {
       <div className="flex flex-row max-h-24 items-center justify-between w-full md:px-14 px-6">
         <a href="/" className="flex items-center justify-center size-32">
           <img
-            src="/en-logo.png"
+            src="/logo.png"
             alt="Logo"
             className="object-contain object-center h-full w-full"
           />
