@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import Text from "./text";
 import { CirclePlay } from "lucide-react";
-import type { Band } from "../../constants/band";
+import type { Band } from "../../constants/artists";
+import { InstagramIcon, YoutubeIcon } from "./icon";
 
 export default function LineupCard({
   band,
@@ -19,7 +20,7 @@ export default function LineupCard({
       animate="rest"
     >
       <motion.span
-        className="absolute bottom-0 -left-1 w-[3px] h-full bg-linear-to-t from-amber to-amber/25 hidden md:block"
+        className="absolute bottom-0 -left-1 w-0.75 h-full bg-linear-to-t from-amber to-amber/25 hidden md:block"
         variants={{
           rest: { scaleY: 0, transformOrigin: "bottom" },
           hovered: { scaleY: 1, transformOrigin: "bottom" },
@@ -28,7 +29,7 @@ export default function LineupCard({
       />
 
       <motion.span
-        className="absolute bottom-0 left-0 h-[3px] w-full bg-linear-to-r from-amber to-transparent md:hidden"
+        className="absolute bottom-0 left-0 h-0.75 w-full bg-linear-to-r from-amber to-transparent md:hidden"
         style={{ originX: 0 }}
         variants={{ rest: { scaleX: 0 }, tapped: { scaleX: 1 } }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -42,6 +43,12 @@ export default function LineupCard({
       >
         0{index + 1}
       </Text>
+
+      <img
+        src={band.image}
+        alt={band.name}
+        className="size-20 shadow-sm rounded-full object-cover"
+      />
 
       <Text
         as="p"
@@ -60,6 +67,25 @@ export default function LineupCard({
       >
         {band.genre}
       </Text>
+
+      {band.socials.length > 0 && (
+        <div className="flex flex-row items-center gap-4 pt-4">
+          {band.socials.map((social) => (
+            <a
+              key={social.label}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted hover:text-amber transition-colors duration-200"
+            >
+              {social.label === "Instagram" && (
+                <InstagramIcon color="#E1306C" />
+              )}
+              {social.label === "YouTube" && <YoutubeIcon color="#FF0000" />}
+            </a>
+          ))}
+        </div>
+      )}
 
       <motion.div
         className="flex pt-6 items-center gap-2"

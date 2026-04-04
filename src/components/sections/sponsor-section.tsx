@@ -4,6 +4,7 @@ import { cn } from "../../../helper/cn";
 import { Sponsors, sponsorTiers } from "../../constants/sponsor";
 import { ArrowRight, Check } from "lucide-react";
 import Button from "../ui/button";
+import { showSponsors } from "../layout/footer";
 
 export default function SponsorSection() {
   return (
@@ -15,7 +16,7 @@ export default function SponsorSection() {
         <SectionHeading label="Made Possible By" title="Sponsor The Encore" />
         <SponsorTiers />
         <GetInTouch />
-        <SponsorsList />
+        {showSponsors && <SponsorsList />}
       </section>
       );
     </div>
