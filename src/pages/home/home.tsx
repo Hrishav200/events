@@ -34,6 +34,15 @@ export default function Home() {
           <SponsorSection />
         </section>
 
+        <div
+          className="flex relative flex-col gap-16 h-150 md:bg-fixed bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url(/footer.png)",
+          }}
+        >
+          <div className="flex flex-1 bg-black/35 inset-0" />
+        </div>
+
         <Footer />
       </div>
     </div>
@@ -43,7 +52,7 @@ export default function Home() {
 function HeroSection() {
   return (
     <div className="relative px-3 overflow-hidden min-h-screen items-center justify-center flex flex-col -my-24">
-      <AbsolutesSection />
+      <AbsoluteSection />
 
       <div className="flex flex-col gap-10 z-10">
         <div className="flex flex-col gap-6 items-center justify-center">
@@ -99,7 +108,7 @@ function HeroSection() {
           />
 
           <Chip
-            label="5 Acts"
+            label="4 Acts"
             classNames={{
               container: "border-gray-500 bg-gray-500/80",
               text: "text-offwhite text-sm",
@@ -165,7 +174,7 @@ function TimerSection() {
   );
 }
 
-function AbsolutesSection() {
+function AbsoluteSection() {
   return (
     <div
       className="absolute w-full h-full bg-cover bg-center bg-no-repeat md:bg-fixed"

@@ -1,5 +1,5 @@
 import Text from "../ui/text";
-import { bands } from "../../constants/band";
+import { Artists } from "../../constants/artists";
 import LineupCard from "../ui/lineup-card";
 
 export default function LineupSection() {
@@ -11,8 +11,8 @@ export default function LineupSection() {
       <section className="py-7 md:px-14 px-6 flex flex-col gap-16">
         <SectionHeading label="Who's Playing" title="The Lineup" />
 
-        <div className="grid grid-cols-1 md:grid-cols-5 border-2 border-border bg-surface">
-          {bands.map((band, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-4 border-2 border-border bg-surface">
+          {Artists.map((band, index) => (
             <LineupCard key={band.name} band={band} index={index} />
           ))}
         </div>

@@ -1,4 +1,4 @@
-import { schedule } from "../../constants/band";
+import { Schedule } from "../../constants/artists";
 import { SectionHeading } from "./lineup-section";
 import Text from "../ui/text";
 import { cn } from "../../../helper/cn";
@@ -18,12 +18,12 @@ export default function ScheduleSection() {
 function ScheduleTable() {
   return (
     <div className="border border-border">
-      {schedule.map((event, index) => (
+      {Schedule.map((event, index) => (
         <div
           key={event.event}
           className={cn(
             "grid grid-cols-5 border-b border-border p-6 transition-colors duration-200 px-8 items-center bg-linear-to-l from-bg  via-surface/90 to-bg/90",
-            index === schedule.length - 1 && "border-b-0",
+            index === Schedule.length - 1 && "border-b-0",
           )}
         >
           <div className="col-span-2 md:col-span-1 items-center justify-center">
