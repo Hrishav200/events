@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroui/modal": "latest",
+    "@heroui/system": "latest",
+    "@heroui/theme": "latest",
     "@tailwindcss/vite": "^4.2.2",
     "@types/react-router-dom": "^5.3.3",
     "clsx": "^2.1.1",

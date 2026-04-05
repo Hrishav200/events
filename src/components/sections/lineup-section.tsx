@@ -8,10 +8,10 @@ export default function LineupSection() {
       id="lineup"
       className="flex flex-col gap-4  w-full bg-surface py-16 border-t border-border scroll-mt-16"
     >
-      <section className="py-7 md:px-14 px-6 flex flex-col gap-16">
+      <section className="py-7 md:px-14 px-6 flex flex-col gap-16 d">
         <SectionHeading label="Who's Playing" title="The Lineup" />
 
-        <div className="grid grid-cols-1 md:grid-cols-4 border-2 border-border bg-surface">
+        <div className="grid grid-cols-1 md:grid-cols-3 border-2 border-border bg-surface">
           {Artists.map((band, index) => (
             <LineupCard key={band.name} band={band} index={index} />
           ))}
