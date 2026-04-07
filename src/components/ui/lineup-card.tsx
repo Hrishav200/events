@@ -137,7 +137,7 @@ export default function LineupCard({
       <ModalView
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        band={selectedBand}
+        band={selectedBand!}
       />
     </motion.div>
   );

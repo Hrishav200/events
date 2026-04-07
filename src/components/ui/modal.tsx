@@ -1,11 +1,4 @@
-import {
-  Modal,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-} from "@heroui/modal";
-import Button from "./button";
+import { Modal, ModalContent, ModalHeader, ModalBody } from "@heroui/modal";
 import type { Band } from "../../constants/artists";
 import { cn } from "../../../helper/cn";
 
