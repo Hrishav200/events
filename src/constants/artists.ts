@@ -63,10 +63,14 @@ export const Artists = [
       },
     ],
     playlist: [
-      { name: "Just Me & The Room", dur: "3:30" },
-      { name: "Stripped Back", dur: "4:10" },
-      { name: "Honest Hours", dur: "3:55" },
-      { name: "One Voice", dur: "4:20" },
+      { name: "Maryo ni maryo", dur: "5:30" },
+      { name: "Parkhidina", dur: "4:10" },
+      { name: "Komal tyo timro", dur: "4:57" },
+      { name: "Gari khana deu", dur: "4:30" },
+      { name: "Sex on fire", dur: "3:30" },
+      { name: "Raftaar", dur: "4:10" },
+      { name: "Timi vane", dur: "5:30" },
+      { name: "Pinjadako suga", dur: "4:50" },
     ],
   },
   {
@@ -81,10 +85,10 @@ export const Artists = [
       },
     ],
     playlist: [
-      { name: "Just Me & The Room", dur: "3:30" },
-      { name: "Stripped Back", dur: "4:10" },
-      { name: "Honest Hours", dur: "3:55" },
-      { name: "One Voice", dur: "4:20" },
+      { name: "Here I am", dur: "3:30" },
+      { name: "K cha", dur: "4:10" },
+      { name: "Random words", dur: "3:55" },
+      { name: "Two Voice", dur: "4:20" },
     ],
   },
   {
