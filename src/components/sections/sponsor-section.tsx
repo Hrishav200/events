@@ -95,6 +95,19 @@ function SponsorTiers() {
 }
 
 function GetInTouch() {
+  const subject = encodeURIComponent(
+    "Interested in Sponsoring The Encore 2026",
+  );
+  const body = encodeURIComponent(
+    `Hi Talamuni Team,
+
+I am interested in sponsoring The Encore. Please let me know the next steps.
+
+Thanks,`,
+  );
+
+  const mailtoLink = `mailto:talamuniband@gmail.com?subject=${subject}&body=${body}`;
+
   return (
     <div className="flex flex-col gap-8 items-center justify-center p-16 border border-border rounded-sm bg-secondary-bg">
       <div className="flex flex-col gap-4 items-center justify-center">
@@ -119,7 +132,7 @@ function GetInTouch() {
 
       <Button
         as="a"
-        href="#lineup"
+        href={mailtoLink}
         className="uppercase tracking-widest text-sm px-12"
         label="Get In Touch"
         variant="outline"
