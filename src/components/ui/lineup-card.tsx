@@ -3,6 +3,9 @@ import Text from "./text";
 import { CirclePlay } from "lucide-react";
 import type { Band } from "../../constants/artists";
 import { InstagramIcon, YoutubeIcon } from "./icon";
+import { useDisclosure } from "@heroui/modal";
+import ModalView from "./modal";
+import { useState } from "react";
 
 export default function LineupCard({
   band,
@@ -11,6 +14,9 @@ export default function LineupCard({
   band: Band;
   index: number;
 }) {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const [selectedBand, setSelectedBand] = useState<Band | null>(null);
+
   return (
     <motion.div
       className="p-8 flex flex-col gap-3 pb-16 border-b-2 md:border-r-2 md:border-b-0 border-border bg-card last:border-r-0 hover:bg-card-highlight transition-colors duration-200 cursor-pointer relative"
@@ -44,11 +50,26 @@ export default function LineupCard({
         0{index + 1}
       </Text>
 
-      <img
-        src={band.image}
-        alt={band.name}
-        className="size-20 shadow-sm rounded-full object-cover"
-      />
+      {band.image && (
+        <img
+          src={band.image}
+          alt={band.name}
+          className="size-20 shadow-sm rounded-full object-cover"
+        />
+      )}
+
+      {!band.image && (
+        <div className="size-20 shadow-sm rounded-full object-cover bg-amber-200 items-center justify-center flex">
+          <Text
+            as="p"
+            size="4xl"
+            fontWeight="bold"
+            className="text-amber-900 uppercase tracking-widest leading-none"
+          >
+            {band.name.charAt(0)}
+          </Text>
+        </div>
+      )}
 
       <Text
         as="p"
@@ -78,28 +99,46 @@ export default function LineupCard({
               rel="noopener noreferrer"
               className="text-muted hover:text-amber transition-colors duration-200"
             >
-              {social.label === "Instagram" && (
-                <InstagramIcon color="#E1306C" />
+              {social.url && (
+                <>
+                  {social.label === "Instagram" && (
+                    <InstagramIcon color="#E1306C" />
+                  )}
+                  {social.label === "YouTube" && (
+                    <YoutubeIcon color="#FF0000" />
+                  )}
+                </>
               )}
-              {social.label === "YouTube" && <YoutubeIcon color="#FF0000" />}
             </a>
           ))}
         </div>
       )}
 
-      <motion.div
-        className="flex pt-6 items-center gap-2"
-        variants={{
-          rest: { y: 60, opacity: 0 },
-          hovered: { y: 0, opacity: 1 },
-        }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-      >
+      <div className="flex pt-6 items-center gap-2">
         <CirclePlay className="w-4 h-4 text-amber" />
-        <Text as="p" size="xs" className="text-amber uppercase tracking-widest">
-          View Setlist
-        </Text>
-      </motion.div>
+
+        <div
+          onClick={() => {
+            setSelectedBand(band);
+            onOpen();
+          }}
+          className="cursor-pointer"
+        >
+          <Text
+            as="p"
+            size="xs"
+            className="text-amber uppercase tracking-widest"
+          >
+            View Setlist
+          </Text>
+        </div>
+      </div>
+
+      <ModalView
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        band={selectedBand!}
+      />
     </motion.div>
   );
 }

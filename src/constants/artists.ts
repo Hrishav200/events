@@ -9,7 +9,7 @@ export interface Band {
 
 export const Artists = [
   {
-    name: "Subik",
+    name: "Esaint Punk ft. Talamuni",
     genre: "Rock",
     image: "/subik.jpg",
     desc: "Subik kick off the night with his signature blend of high-energy Rock and infectious melodies. With a reputation for electrifying live shows, he is guaranteed to get the crowd moving and set the tone for an unforgettable evening.",
@@ -50,26 +50,43 @@ export const Artists = [
     ],
   },
   {
-    name: "Khatra",
-    image: "/khatra.jpg",
-    genre: "Rock / Melodious",
-    desc: "Khatra blend driving Rock energy with deeply melodious songwriting — the kind of music that gets under your skin and stays there. Powerful, tuneful and impossible to ignore.",
+    name: "The Third Eye",
+    image: "/3eye.jpg",
+    genre: "Hard Rock",
+    desc: "A spotlight on the individual — raw, unfiltered, and deeply personal. Melbourne's solo artists take the mic between sets to share something intimate with the crowd. No band needed. Just pure heart.",
     socials: [
       {
         label: "Instagram",
-        url: "https://www.instagram.com/khatrax2.0?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-      },
-      {
-        label: "YouTube",
-        url: "https://www.youtube.com/watch?v=1eMwX1AYBRA&list=RD1eMwX1AYBRA&start_radio=1",
+        url: "https://www.instagram.com/the_3rd_eye_band?igsh=MTBvdmptcmVvbno2Ng==",
       },
     ],
     playlist: [
-      { name: "Lit Fuse", dur: "3:20" },
-      { name: "City Pulse", dur: "4:05" },
-      { name: "Gold Chain Logic", dur: "3:55" },
-      { name: "Aftermath", dur: "5:12" },
-      { name: "Unstoppable", dur: "4:22" },
+      { name: "Maryo ni maryo", dur: "5:30" },
+      { name: "Parkhidina", dur: "4:10" },
+      { name: "Komal tyo timro", dur: "4:57" },
+      { name: "Gari khana deu", dur: "4:30" },
+      { name: "Sex on fire", dur: "3:30" },
+      { name: "Raftaar", dur: "4:10" },
+      { name: "Timi vane", dur: "5:30" },
+      { name: "Pinjadako suga", dur: "4:50" },
+    ],
+  },
+  {
+    name: "Niharika",
+    image: "",
+    genre: "Acoustic / Singer",
+    desc: "A spotlight on the individual — raw, unfiltered, and deeply personal. Melbourne's solo artists take the mic between sets to share something intimate with the crowd. No band needed. Just pure heart.",
+    socials: [
+      {
+        label: "Instagram",
+        url: "",
+      },
+    ],
+    playlist: [
+      { name: "Here I am", dur: "3:30" },
+      { name: "K cha", dur: "4:10" },
+      { name: "Random words", dur: "3:55" },
+      { name: "Two Voice", dur: "4:20" },
     ],
   },
   {
@@ -95,6 +112,34 @@ export const Artists = [
       { name: "Hidne Manche Ladcha", dur: "3:50" },
     ],
   },
+  {
+    name: "Khatra",
+    image: "/khatra.jpg",
+    genre: "Rock / Melodious",
+    desc: "Khatra blend driving Rock energy with deeply melodious songwriting — the kind of music that gets under your skin and stays there. Powerful, tuneful and impossible to ignore.",
+    socials: [
+      {
+        label: "Instagram",
+        url: "https://www.instagram.com/khatrax2.0?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      },
+      {
+        label: "YouTube",
+        url: "https://www.youtube.com/watch?v=1eMwX1AYBRA&list=RD1eMwX1AYBRA&start_radio=1",
+      },
+    ],
+    playlist: [
+      { name: "Notion", dur: "3:10" },
+      { name: "Nischal", dur: "4:10" },
+      { name: "Afnai sansaar ma", dur: "3:55" },
+      { name: "Shine", dur: "5:10" },
+      { name: "Timi vane", dur: "5:30" },
+      { name: "Yellow", dur: "4:35" },
+      { name: "Summer of 69", dur: "3:45" },
+      { name: "Just the way you are", dur: "3:52" },
+      { name: "Jau ki basau", dur: "5:24" },
+      { name: "Mercedes Benz", dur: "5:10" },
+    ],
+  },
 ];
 
 export const Schedule = [
@@ -109,18 +154,17 @@ export const Schedule = [
     label: "Opening Set",
   },
   {
-    event: "Subik Shrestha",
+    event: "Esaint Punk ft. Talamuni",
     time: "7:15 PM",
-    label: "Main Stage",
-  },
-
-  {
-    event: "Khatra",
-    time: "8:45 PM",
     label: "Main Stage",
   },
   {
     event: "Talamuni",
+    time: "8:45 PM",
+    label: "Main Stage",
+  },
+  {
+    event: "Khatra",
     time: "9:45 PM",
     label: "Closing Act",
   },
