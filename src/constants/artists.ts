@@ -53,7 +53,7 @@ export const Artists = [
     name: "The Third Eye",
     image: "/3eye.jpg",
     genre: "Hard Rock",
-    desc: "A spotlight on the individual — raw, unfiltered, and deeply personal. Melbourne's solo artists take the mic between sets to share something intimate with the crowd. No band needed. Just pure heart.",
+    desc: "A spotlight on the rock performer — raw, unfiltered, and deeply personal.",
     socials: [
       {
         label: "Instagram",
@@ -73,13 +73,13 @@ export const Artists = [
   },
   {
     name: "Niharika",
-    image: "",
+    image: "/niharika.jpg",
     genre: "Acoustic / Singer",
-    desc: "A spotlight on the individual — raw, unfiltered, and deeply personal. Melbourne's solo artists take the mic between sets to share something intimate with the crowd. No band needed. Just pure heart.",
+    desc: "A spotlight on the individual — raw, unfiltered, and deeply personal. Melbourne's solo artist take the mic between sets to share something intimate with the crowd. No band needed. Just pure heart.",
     socials: [
       {
         label: "Instagram",
-        url: "",
+        url: "https://www.instagram.com/niharikagyawali_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       },
     ],
     playlist: [
@@ -92,8 +92,8 @@ export const Artists = [
   {
     name: "Talamuni",
     image: "/talamuni.jpg",
-    genre: "Grunge / Rock / Metal / Punk",
-    desc: "Talamuni close the night with full-force chaos and heart. Grunge grit, Metal weight, Punk attitude and Rock soul — all at once. This is the set that everyone will still be talking about the next morning.",
+    genre: "Alternative",
+    desc: "Talamuni rocks the night with full-force chaos and heart. Grunge grit, Metal weight, Punk attitude and Rock soul — all at once. This is the set that everyone will still be talking about the next morning.",
     socials: [
       {
         label: "Instagram",
@@ -115,7 +115,7 @@ export const Artists = [
   {
     name: "Khatra",
     image: "/khatra.jpg",
-    genre: "Rock / Melodious",
+    genre: "Rock / Alternative",
     desc: "Khatra blend driving Rock energy with deeply melodious songwriting — the kind of music that gets under your skin and stays there. Powerful, tuneful and impossible to ignore.",
     socials: [
       {
@@ -156,6 +156,11 @@ export const Schedule = [
   {
     event: "Esaint Punk ft. Talamuni",
     time: "7:15 PM",
+    label: "Main Stage",
+  },
+  {
+    event: "The Third Eye",
+    time: "8:00 PM",
     label: "Main Stage",
   },
   {
