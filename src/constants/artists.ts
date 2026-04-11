@@ -36,7 +36,12 @@ export const Artists = [
         url: "https://www.instagram.com/yourfavsongwriter?igsh=bHhxc2xtY216ZWp4",
       },
     ],
-    playlist: [],
+    playlist: [
+      { name: "Just Me & The Room", dur: "3:30" },
+      { name: "Stripped Back", dur: "4:10" },
+      { name: "Honest Hours", dur: "3:55" },
+      { name: "One Voice", dur: "4:20" },
+    ],
   },
   {
     name: "The Third Eye",
