@@ -9,7 +9,7 @@ export interface Band {
 
 export const Artists = [
   {
-    name: "Esaint Punk ft. Talamuni",
+    name: "Subik ft. Talamuni",
     genre: "Rock",
     image: "/subik.jpg",
     desc: "Subik kick off the night with his signature blend of high-energy Rock and infectious melodies. With a reputation for electrifying live shows, he is guaranteed to get the crowd moving and set the tone for an unforgettable evening.",
@@ -147,7 +147,7 @@ export const Schedule = [
     label: "Opening Set",
   },
   {
-    event: "Esaint Punk ft. Talamuni",
+    event: "Subik ft. Talamuni",
     time: "6:40 PM",
     label: "Main Stage",
   },
