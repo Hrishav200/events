@@ -5,7 +5,7 @@ import { CopyIcon, FacebookIcon, TwitterIcon, WhatsAppIcon } from "../ui/icon";
 
 const shareUrl = encodeURIComponent(window.location.href);
 const shareText = encodeURIComponent(
-  "🎶 The Encore — Melbourne's multi-genre music night! 25 April 2025, 6PM–11PM at Glenroy Billiards & Bar. Come through!",
+  "🎶 The Encore — Melbourne's multi-genre music night! 25 April 2025, 5PM – Late Night at Glenroy Billiards & Bar. Come through!",
 );
 
 const ShareLinks = [
