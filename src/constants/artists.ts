@@ -37,10 +37,8 @@ export const Artists = [
       },
     ],
     playlist: [
-      { name: "Just Me & The Room", dur: "3:30" },
-      { name: "Stripped Back", dur: "4:10" },
-      { name: "Honest Hours", dur: "3:55" },
-      { name: "One Voice", dur: "4:20" },
+      { name: "Mah janchu la", dur: "3:30" },
+      { name: "Zombie", dur: "4:10" },
     ],
   },
   {
@@ -77,10 +75,11 @@ export const Artists = [
       },
     ],
     playlist: [
-      { name: "Jaba Sandhya Huncha", dur: "3:30" },
-      { name: "Nischal", dur: "4:10" },
-      { name: "Basanta", dur: "3:00" },
-      { name: "Ma Sansar Jitney", dur: "4:00" },
+      { name: "Mountain High", dur: "3:30" },
+      { name: "Cold/Mess", dur: "4:10" },
+      { name: "Ananta", dur: "3:00" },
+      { name: "Yellow", dur: "4:30" },
+      { name: "Zombie", dur: "4:40" },
     ],
   },
   {
