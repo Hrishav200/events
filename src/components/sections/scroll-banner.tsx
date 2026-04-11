@@ -15,12 +15,12 @@ export default function ScrollBanner() {
           size="2xl"
         >
           THE ENCORE &nbsp;·&nbsp; 25 APRIL &nbsp;·&nbsp; GLENROY VIC
-          &nbsp;·&nbsp; AQUAPUNCTURE &nbsp;·&nbsp; THE THIRD EYE &nbsp;·&nbsp;
-          KHATRA &nbsp;·&nbsp; TALAMUNI &nbsp;·&nbsp; SOLO PERFORMANCES
-          &nbsp;·&nbsp; THE ENCORE &nbsp;·&nbsp; 25 APRIL &nbsp;·&nbsp; GLENROY
-          VIC &nbsp;·&nbsp; AQUAPUNCTURE &nbsp;·&nbsp; THE THIRD EYE
-          &nbsp;·&nbsp; KHATRA &nbsp;·&nbsp; TALAMUNI &nbsp;·&nbsp; SOLO
-          PERFORMANCES &nbsp;·&nbsp;
+          &nbsp;·&nbsp; ESAINT PUNK &nbsp;·&nbsp; THE THIRD EYE &nbsp;·&nbsp;
+          KHATRA &nbsp;·&nbsp; TALAMUNI &nbsp;·&nbsp; ANORI &nbsp;·&nbsp;
+          NIHARIKA &nbsp;·&nbsp; THE ENCORE &nbsp;·&nbsp; 25 APRIL &nbsp;·&nbsp;
+          GLENROY VIC &nbsp;·&nbsp; ESAINT PUNK &nbsp;·&nbsp; THE THIRD EYE
+          &nbsp;·&nbsp; KHATRA &nbsp;·&nbsp; TALAMUNI &nbsp;·&nbsp; ANORI
+          &nbsp;·&nbsp; NIHARIKA &nbsp;·&nbsp;
         </Text>
       </motion.div>
     </div>

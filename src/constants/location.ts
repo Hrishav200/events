@@ -7,8 +7,8 @@ export const location = {
     postcode: "3046",
   },
   day: "Saturday, 25 April 2026",
-  doors: "6:00 PM",
-  finish: "11:00 PM",
+  doors: "5:00 PM",
+  finish: "Late Night",
   description:
     "A celebration of Melbourne's finest independent musicians, all under one roof. Whether you're a musician yourself or just love great music — come be part of something special.",
   parking: {

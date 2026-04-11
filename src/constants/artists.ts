@@ -23,13 +23,7 @@ export const Artists = [
         url: "https://www.youtube.com/@subikshrestha4284",
       },
     ],
-    playlist: [
-      { name: "Open Wide", dur: "5:01" },
-      { name: "Kaleidoscope Mind", dur: "4:33" },
-      { name: "The Watcher", dur: "6:10" },
-      { name: "Neon Visions", dur: "3:48" },
-      { name: "Beyond the Veil", dur: "5:55" },
-    ],
+    playlist: [{ name: "Creep", dur: "4:00" }],
   },
   {
     name: "ANORI",
@@ -43,10 +37,8 @@ export const Artists = [
       },
     ],
     playlist: [
-      { name: "Just Me & The Room", dur: "3:30" },
-      { name: "Stripped Back", dur: "4:10" },
-      { name: "Honest Hours", dur: "3:55" },
-      { name: "One Voice", dur: "4:20" },
+      { name: "Mah janchu la", dur: "3:30" },
+      { name: "Zombie", dur: "4:10" },
     ],
   },
   {
@@ -83,10 +75,11 @@ export const Artists = [
       },
     ],
     playlist: [
-      { name: "Here I am", dur: "3:30" },
-      { name: "K cha", dur: "4:10" },
-      { name: "Random words", dur: "3:55" },
-      { name: "Two Voice", dur: "4:20" },
+      { name: "Mountain High", dur: "3:30" },
+      { name: "Cold/Mess", dur: "4:10" },
+      { name: "Ananta", dur: "3:00" },
+      { name: "Yellow", dur: "4:30" },
+      { name: "Zombie", dur: "4:40" },
     ],
   },
   {
@@ -145,17 +138,22 @@ export const Artists = [
 export const Schedule = [
   {
     event: "Doors Open – Welcome & Warm-up",
-    time: "6:00 PM",
+    time: "5:00 PM",
     label: "Arrival",
   },
   {
     event: "ANORI",
-    time: "6:30 PM",
+    time: "6:00 PM",
     label: "Opening Set",
   },
   {
     event: "Esaint Punk ft. Talamuni",
-    time: "7:15 PM",
+    time: "6:40 PM",
+    label: "Main Stage",
+  },
+  {
+    event: "Niharika",
+    time: "7:20 PM",
     label: "Main Stage",
   },
   {
@@ -165,17 +163,17 @@ export const Schedule = [
   },
   {
     event: "Talamuni",
-    time: "8:45 PM",
+    time: "9:10 PM",
     label: "Main Stage",
   },
   {
     event: "Khatra",
-    time: "9:45 PM",
+    time: "10:10 PM",
     label: "Closing Act",
   },
   {
     event: "The Encore – Final Bows & After Vibes",
-    time: "11:00 PM",
+    time: "11:20 PM",
     label: "End of Night",
   },
 ];
