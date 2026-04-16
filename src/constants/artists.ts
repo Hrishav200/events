@@ -42,6 +42,23 @@ export const Artists = [
     ],
   },
   {
+    name: "Riju",
+    image: "/riju.jpg",
+    genre: "Acoustic / Singer",
+    desc: "Riju brings a fresh perspective to the music scene with her unique blend of pop and indie influences. Her soulful voice and relatable lyrics resonate with audiences of all ages.",
+    socials: [
+      {
+        label: "Instagram",
+        url: "https://www.instagram.com/rijukhatrichhetri?igsh=MWxiOG1zM2NlOWh4cg==",
+      },
+    ],
+    playlist: [
+      { name: "La vien rose", dur: "3:30" },
+      { name: "Easy on me", dur: "4:10" },
+      { name: "Always somewhere", dur: "4:35" },
+    ],
+  },
+  {
     name: "The Third Eye",
     image: "/3eye.jpg",
     genre: "Hard Rock",
@@ -143,37 +160,42 @@ export const Schedule = [
   },
   {
     event: "ANORI",
-    time: "6:00 PM",
+    time: "5:30 PM",
     label: "Opening Set",
   },
   {
     event: "Subik ft. Talamuni",
-    time: "6:40 PM",
+    time: "6:10 PM",
     label: "Main Stage",
   },
   {
     event: "Niharika",
-    time: "7:20 PM",
+    time: "6:50 PM",
+    label: "Main Stage",
+  },
+  {
+    event: "Riju",
+    time: "7:40 PM",
     label: "Main Stage",
   },
   {
     event: "The Third Eye",
-    time: "8:00 PM",
+    time: "8:30 PM",
     label: "Main Stage",
   },
   {
     event: "Talamuni",
-    time: "9:10 PM",
+    time: "9:40 PM",
     label: "Main Stage",
   },
   {
     event: "Khatra",
-    time: "10:10 PM",
+    time: "10:50 PM",
     label: "Closing Act",
   },
   {
     event: "The Encore – Final Bows & After Vibes",
-    time: "11:20 PM",
+    time: "12:00 AM",
     label: "End of Night",
   },
 ];
