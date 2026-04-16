@@ -7,7 +7,7 @@ export default function ScheduleSection() {
   return (
     <div id="schedule" className="flex flex-col gap-4 w-full scroll-mt-24">
       <section className="py-7 md:px-14 px-6 flex flex-col gap-16">
-        <SectionHeading label="When They Hit The Stage" title="Set Schedule" />
+        <SectionHeading label="When They Hit The Stage" title="Schedule" />
 
         <ScheduleTable />
       </section>

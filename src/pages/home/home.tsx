@@ -108,7 +108,7 @@ function HeroSection() {
           />
 
           <Chip
-            label="6 Acts"
+            label="7 Acts"
             classNames={{
               container: "border-gray-500 bg-gray-500/80",
               text: "text-offwhite text-sm",

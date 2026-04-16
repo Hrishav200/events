@@ -17,10 +17,10 @@ export default function ScrollBanner() {
           THE ENCORE &nbsp;·&nbsp; 25 APRIL &nbsp;·&nbsp; GLENROY VIC
           &nbsp;·&nbsp; SUBIK &nbsp;·&nbsp; THE THIRD EYE &nbsp;·&nbsp; KHATRA
           &nbsp;·&nbsp; TALAMUNI &nbsp;·&nbsp; ANORI &nbsp;·&nbsp; NIHARIKA
-          &nbsp;·&nbsp; THE ENCORE &nbsp;·&nbsp; 25 APRIL &nbsp;·&nbsp; GLENROY
-          VIC &nbsp;·&nbsp; SUBIK &nbsp;·&nbsp; THE THIRD EYE &nbsp;·&nbsp;
-          KHATRA &nbsp;·&nbsp; TALAMUNI &nbsp;·&nbsp; ANORI &nbsp;·&nbsp;
-          NIHARIKA &nbsp;·&nbsp;
+          &nbsp;·&nbsp; RIJU &nbsp;·&nbsp; THE ENCORE &nbsp;·&nbsp; 25 APRIL
+          &nbsp;·&nbsp; GLENROY VIC &nbsp;·&nbsp; SUBIK &nbsp;·&nbsp; THE THIRD
+          EYE &nbsp;·&nbsp; KHATRA &nbsp;·&nbsp; TALAMUNI &nbsp;·&nbsp; ANORI
+          &nbsp;·&nbsp; NIHARIKA &nbsp;·&nbsp;
         </Text>
       </motion.div>
     </div>
