@@ -150,6 +150,10 @@ function HeroSection() {
 function TimerSection() {
   const countdown = useCountdown();
 
+  const now = new Date();
+  const target = new Date(date.day);
+  const hasEventEnded = now.getTime() > target.getTime();
+
   return (
     <div className="flex flex-col gap-4 items-center justify-center z-10 flex-wrap">
       <Text
@@ -162,13 +166,22 @@ function TimerSection() {
       </Text>
 
       <div className="flex flex-row gap-2 md:gap-5 flex-wrap justify-center items-center">
-        <Timer remaining={countdown.days} unit="days" />
+        <Timer remaining={!hasEventEnded ? countdown.days : "00"} unit="days" />
         <TimerSeparator />
-        <Timer remaining={countdown.hours} unit="hours" />
+        <Timer
+          remaining={!hasEventEnded ? countdown.hours : "00"}
+          unit="hours"
+        />
         <TimerSeparator />
-        <Timer remaining={countdown.minutes} unit="mins" />
+        <Timer
+          remaining={!hasEventEnded ? countdown.minutes : "00"}
+          unit="mins"
+        />
         <TimerSeparator />
-        <Timer remaining={countdown.seconds} unit="secs" />
+        <Timer
+          remaining={!hasEventEnded ? countdown.seconds : "00"}
+          unit="secs"
+        />
       </div>
     </div>
   );
